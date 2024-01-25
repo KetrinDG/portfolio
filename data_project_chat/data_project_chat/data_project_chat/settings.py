@@ -85,14 +85,13 @@ WSGI_APPLICATION = "data_project_chat.wsgi.application"
 DATABASES = {
     'default': {
         'ENGINE': env('DB_ENGINE'),
-        'NAME': env('DB_NAME'),        # Имя базы данных
-        'USER': env('DB_USER'),        # Имя пользователя
-        'PASSWORD': env('DB_PASSWORD'),  # Пароль
-        'HOST': env('DB_HOST'), 
-        'PORT': '',  
+        'NAME': env('DB_NAME'),
+        'USER': env('DB_USER'),
+        'PASSWORD': env('DB_PASSWORD'),
+        'HOST': env('DB_HOST'),
+        'PORT': env('DB_PORT'),
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
